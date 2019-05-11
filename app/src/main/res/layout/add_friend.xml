@@ -3,7 +3,8 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="70dp">
 
     <TextView
             android:layout_width="wrap_content"
@@ -27,7 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:text="Name"
+                android:hint="Name"
         />
 
         <Spinner
@@ -43,7 +44,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:text="Email"
+                android:hint="Email"
                 android:layout_marginTop="16dp"
         />
 
@@ -52,7 +53,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:text="Telp"
+                android:hint="Telp"
                 android:layout_marginTop="16dp"
         />
 
@@ -60,7 +61,7 @@
                 android:id="@+id/editaddress"
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
-                android:text="Address"
+                android:hint="Address"
                 android:inputType="textMultiLine"
                 android:layout_marginTop="16dp"
         />

@@ -6,8 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.*
+import kotlinx.android.synthetic.main.contact_fragment.*
 
-class ContactFragment(): Fragment{
+class ContactFragment(): Fragment(){
     companion object {
         fun newInstance(): ContactFragment{
             return ContactFragment()
@@ -20,6 +21,10 @@ class ContactFragment(): Fragment{
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        fabadd.setOnClickListener {
+            (activity as MainActivity).tampilAddFriendFragment()
+        }
     }
 
     override fun onDestroy() {
